@@ -1,0 +1,195 @@
+.top-container {
+  background-color: #eceff1;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 140px;
+  padding-bottom: 40px;
+}
+
+.airplane {
+  width: 200px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  color: #238787;
+  font-size: 5.625rem;
+  margin: 20px 0 10px 0;
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  color: #8a9b9b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.controller {
+  width: 200px;
+  margin-top: 30px;
+  border-radius: 15px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.middle-container {
+  background-color: #16344c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fly {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 100px;
+  animation: fly 2s infinite ease-in-out;
+  transform-origin: top center;
+  display: inline-block;
+}
+
+@keyframes fly {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+p {
+  text-align: center;
+  color: whitesmoke;
+}
+
+hr {
+  border: dotted #d3a850 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 50px auto;
+}
+
+.Proffesion {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  width: 60%;
+  margin: 30px auto 0 auto;
+  text-align: left;
+  row-gap: 3rem;
+  column-gap: 2rem;
+}
+
+.taxi-plane,
+.takeoff-plane {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Proffesion p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .Proffesion {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .Proffesion p {
+    text-align: center;
+  }
+}
+
+.contact-me {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-message {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #11999e;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0e807f;
+}
+
+.bottom-container {
+  background-color: #15222d;
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer-link {
+  color: #d4e5f0;
+  margin: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link i {
+  margin-right: 8px;
+}
+
+.footer-link:hover {
+  color: #e4b177;
+}
+
+.copyright {
+  color: #8899aa;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
